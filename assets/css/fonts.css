@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "poppinsBlack900";
+    src: url("../fonts/Poppins/Poppins-Black.ttf");
+}
+@font-face {
+    font-family: "poppinsMedium500";
+    src: url("../fonts/Poppins/Poppins-Medium.ttf");
+}
+@font-face {
+    font-family: "poppinsRegular400";
+    src: url("../fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: "poppinsELight200";
+    src: url("../fonts/Poppins/Poppins-ExtraLight.ttf");
+}
+@font-face {
+    font-family: "poppinsLight300";
+    src: url("../fonts/Poppins/Poppins-Light.ttf");
+}
+@font-face {
+    font-family: "poppinsSemiBold600";
+    src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+}
+@font-face {
+    font-family: "poppinsBold700";
+    src: url("../fonts/Poppins/Poppins-Bold.ttf");
+}
+@font-face {
+    font-family: "brushile";
+    src: url("../fonts/brushlie demo.otf");
+}
+@font-face {
+    font-family: "glitten";
+    src: url("../fonts/glitten/Glitten-Regular.ttf");
+}

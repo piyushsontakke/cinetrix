@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinetricx</title>
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap-grid.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/vendors/owl.carousel/assets/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/vendors/owl.carousel/assets/owl.theme.default.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/vendors/slicknav/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+    
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+
+
+</head>
+<body>
+   
+
+    <header class="checkout-page">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="assets/images/logo.svg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="step-progress-bar">
+                        <ul class="d-flex" id="progressbar">
+                            <li id="details" class="active">
+                                <span><img src="assets/images/step-tick.svg" alt=""></span>
+                                <p>Your Details</p>
+                            </li>
+                            <li id="address">
+                                <span><img src="assets/images/step-tick.svg" alt=""></span>
+                                <p>Your Address</p>
+                            </li>
+                            <li id="delivery-time">
+                                <span><img src="assets/images/step-tick.svg" alt=""></span>
+                                <p>Delivery Time</p>
+                            </li>
+                            <li id="payment">
+                                <span><img src="assets/images/step-tick.svg" alt=""></span>
+                                <p>Payment Method</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="checkout-order-details">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="checkout-section">
+                            <h4>Checkout</h4>
+                        </div>
+                        <div class="checkout-wrapper">
+                            <div class="your-details fieldsets active">
+                                <div class="step-header">
+                                    <i class="fas fa-user"></i>
+                                    <h4>Your Details</h4>
+                                </div>
+                                <div class="previous-details">
+                                    <p>Use previous saved details</p>
+                                    <div class="all-details">
+                                        <input type="radio" id="detailsOne" name="radio-group" >
+                                        <label for="detailsOne">
+                                            <p class="primary">Luv Vispute</p> 
+                                            <p class="secondary">+91 - 8795463321</p> 
+                                            <p class="secondary">luv@zmail.com</p>
+                                        </label>
+                                        <a href="" class="edit-btn" data-toggle="modal" data-target="#editDetailsModal">
+                                            <img src="assets/images/edit-btn.svg" alt="">
+                                        </a>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="editDetailsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="action-btns">
+                                        <div class="row">
+                                            <div class="col-7 col-md-6 d-flex align-items-center">
+                                                <div class="add-new-details">
+                                                    <a href="#" data-toggle="modal" data-target="#addDetailsModal">
+                                                        <img src="assets/images/plus.svg" alt="">Add new details
+                                                    </a>
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="addDetailsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                            ...
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-5 col-md-6 d-flex justify-content-end">
+                                                <input type="button" name="next" class="next action-button" value="Done">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="your-address fieldsets mt-4">
+                                <div class="step-header">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <h4>Your Address</h4>
+                                </div>
+                                <div class="previous-details">
+                                    <p>use previous saved address</p>
+                                    <div class="all-details">
+                                        <input type="radio" id="detailsOne" name="radio-group" >
+                                        <label for="detailsOne">
+                                            <p class="primary">88/1, Indrapuri, Bhanwar kua road</p> 
+                                            <p class="secondary">452005, Indore MP</p> 
+                                            <p class="secondary">near police station</p>
+                                        </label>
+                                        <a href="" class="edit-btn" data-toggle="modal" data-target="#editDetailsModal">
+                                            <img src="assets/images/edit-btn.svg" alt="">
+                                        </a>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="editDetailsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="action-btns">
+                                        <div class="row">
+                                            <div class="col-7 col-md-6 d-flex align-items-center">
+                                                <div class="add-new-details">
+                                                    <a href="#" data-toggle="modal" data-target="#addDetailsModal">
+                                                        <img src="assets/images/plus.svg" alt="">Add new details
+                                                    </a>
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="addDetailsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                            ...
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-5 col-md-6 d-flex justify-content-end">
+                                                <input type="button" name="next" class="next action-button" value="Done">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="delivery-time fieldsets mt-4">
+                                <div class="step-header">
+                                    <i class="fas fa-clock"></i>
+                                    <h4>Delivery Time</h4>
+                                </div>
+                                <div class="previous-details">
+                                    <p>Use previous saved details</p>
+                                    <div class="all-details">
+                                        <input type="radio" id="standardDel" name="radio-group" >
+                                        <label for="standardDel">
+                                            <p class="primary">Standard Delivery</p>                                            
+                                        </label>
+                                        <p>09:00 - 20:00</p>                             
+                                    </div>   
+                                    <div class="delivery-slot">
+                                        <input type="radio" id="slot" name="radio-group" >
+                                        <label for="slot">
+                                            <p class="primary">Choose delivery slot</p>                                            
+                                        </label>
+                                    </div>
+                                    <div class="action-btns">
+                                        <div class="row">
+                                            <div class="col-7 col-md-6 d-flex align-items-center">
+                                                <div class="add-new-details">
+                                                                                                       
+                                                </div>
+                                            </div>
+                                            <div class="col-5 col-md-6 d-flex justify-content-end">
+                                                <input type="button" name="next" class="next action-button" value="Done">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="payment-method fieldsets mt-4">
+                                <div class="step-header">
+                                    <i class="fas fa-credit-card"></i>
+                                    <h4>Payment Method</h4>
+                                </div>
+                                <div class="previous-details">
+                                    <p>Use previous saved details</p>
+                                    <div class="all-details">
+                                        <input type="radio" id="cards" name="radio-group" >
+                                        <label for="cards">
+                                            <p class="primary">Credit / Debit Card</p>                                            
+                                        </label>
+                                        <p><img src="assets/images/cards.svg" alt=""></p>                             
+                                    </div>   
+                                    <div class="delivery-slot">
+                                        <input type="radio" id="upi" name="radio-group" >
+                                        <label for="upi">
+                                            <p class="primary">UPI</p>                                            
+                                        </label>
+                                    </div>
+                                    <div class="action-btns">
+                                        <div class="row">
+                                            <div class="col-md-6 d-flex align-items-center">
+                                                <div class="add-new-details">                                                    
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 d-flex justify-content-end">
+                                                <input type="button" name="next" class="next action-button" value="Done">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="order-details-section">
+                            <h4>Order Details</h4>
+                        </div>
+                        <div class="order-details-wrapper">
+                            <p>your order details are listed here</p>
+                            <ul>
+                                <li>
+                                    <div class="product-for-checkout">
+                                        <img src="assets/images/camera-cart.png" alt="">
+                                    </div>
+                                    <div class="product-checkout-details">
+                                        <p class="product-name">Canon eos 5D mark IV 30.4 MP Digital SLR</p>  
+                                        <p>
+                                            <span>Qty : <span>1</span></span> | 
+                                            <span>Days : <span>2</span></span>
+                                        </p>                                  
+                                    </div>
+                                    <div class="checkout-cost">
+                                        <p>3000 ₹ </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-for-checkout">
+                                        <img src="assets/images/camera-cart.png" alt="">
+                                    </div>
+                                    <div class="product-checkout-details">
+                                        <p class="product-name">Canon eos 5D mark IV 30.4 MP Digital SLR</p>  
+                                        <p>
+                                            <span>Qty : <span>1</span></span> | 
+                                            <span>Days : <span>2</span></span>
+                                        </p>                                  
+                                    </div>
+                                    <div class="checkout-cost">
+                                        <p>3000 ₹ </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-for-checkout">
+                                        <img src="assets/images/camera-cart.png" alt="">
+                                    </div>
+                                    <div class="product-checkout-details">
+                                        <p class="product-name">Canon eos 5D mark IV 30.4 MP Digital SLR</p>  
+                                        <p>
+                                            <span>Qty : <span>1</span></span> | 
+                                            <span>Days : <span>2</span></span>
+                                        </p>                                  
+                                    </div>
+                                    <div class="checkout-cost">
+                                        <p>3000 ₹ </p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="total-with-taxes">
+                                <div class="calculation">
+                                    <p class="label">Item subtotal</p>
+                                    <p class="price">3599 ₹ </p>
+                                </div>
+                                <div class="calculation">
+                                    <p class="label">SGST</p>
+                                    <p class="price">150 ₹ </p>
+                                </div>
+                                <div class="calculation">
+                                    <p class="label">CGST</p>
+                                    <p class="price">150 ₹ </p>
+                                </div>                                
+                                <div class="calculation total">
+                                    <p class="label">Subtotal</p>
+                                    <p class="total-price">3899 ₹ </p>
+                                </div>
+                            </div>
+                            <div class="promocode">
+                                <a href="#">Add promo code </a>
+                                <button> <img src="assets/images/cart-white.svg" alt=""> PAR SECURELY</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer starts here -->
+    <!-- <footer class="">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-list">
+                        <a href="#">About Us</a> |
+                        <a href="#">About Us</a> |
+                        <a href="#">About Us</a> |
+                        <a href="#">About Us</a> |
+                        <a href="#">About Us</a> |
+                        <a href="#">About Us</a> |
+                        <a href="#">About Us</a> |
+                        <a href="#">About Us</a> |
+                        <a href="#">About Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="help-center text-center">
+                        <p>Need Help ? <span><a href="#">Help Center</a></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="social-icons">
+                        <a href="#">
+                            <img src="assets/images/Facebook_white.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="assets/images/Instagram_white.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="assets/images/Youtube_white.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="assets/images/Twitter_white.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendors/jquery/jquery.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendors/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendors/slicknav/jquery.slicknav.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/solid.js" integrity="sha384-/BxOvRagtVDn9dJ+JGCtcofNXgQO/CCCVKdMfL115s3gOgQxWaX/tSq5V8dRgsbc" crossorigin="anonymous"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
