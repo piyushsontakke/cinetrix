@@ -84,26 +84,46 @@
                                         <a href="" class="edit-btn" data-toggle="modal" data-target="#editDetailsModal">
                                             <img src="assets/images/edit-btn.svg" alt="">
                                         </a>
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="editDetailsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <!--Edit Modal -->
+                                        <div class="modal fade checkoutModals edit" id="editDetailsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">Edit details</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Your Name" value="Luv Vispute">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="email" class="form-control" placeholder="Your Email" value="luv@zmail.com">
+                                                        </div>
+                                                        <div class="phone-numbers">
+                                                            <div class="dropdown" id="country-codes">
+                                                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                                                  <span class="value">+91</span>
+                                                                  <span class="caret"></span>
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                  <li><a href="#" value="+91">India (+47)</a></li>
+                                                                  <li><a href="#" value="+92">Sweeden (+46)</a></li>
+                                                                  <li><a href="#" value="+79">Danmark (+79)</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <input type="text" class="form-control border-0" id="number" value="9578487845" name="number">
+                                                        </div>
+                                                        <button type="button" class="btn btn-submit">Edit</button>
+                                                    </div>
+                                                    <!-- <div class="modal-footer">
+                                                        <button type="button" class="btn btn-popup">Save changes</button>
+                                                    </div> -->
                                                 </div>
-                                                <div class="modal-body">
-                                                ...
-                                                </div>
-                                                <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Save changes</button>
-                                                </div>
-                                            </div>
                                             </div>
                                         </div>
+                                        <!--Edit Modal -->
                                     </div>
                                     <div class="action-btns">
                                         <div class="row">
@@ -112,26 +132,47 @@
                                                     <a href="#" data-toggle="modal" data-target="#addDetailsModal">
                                                         <img src="assets/images/plus.svg" alt="">Add new details
                                                     </a>
-                                                    <!-- Modal -->
-                                                    <div class="modal fade" id="addDetailsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                    <!--Add Modal -->
+                                                    <div class="modal fade checkoutModals add" id="addDetailsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered" role="document">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                <span aria-hidden="true">&times;</span>
-                                                            </button>
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exampleModalLongTitle">Add details</h5>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="form-group">
+                                                                        <input type="text" class="form-control" placeholder="Your Name" value="">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <input type="email" class="form-control" placeholder="Your Email" value="">
+                                                                    </div>
+                                                                    <div class="phone-numbers">
+                                                                        <div class="dropdown" id="country-codes">
+                                                                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                                                            <span class="value">+91</span>
+                                                                            <span class="caret"></span>
+                                                                            </button>
+                                                                            <ul class="dropdown-menu">
+                                                                            <li><a href="#" value="+91">India (+47)</a></li>
+                                                                            <li><a href="#" value="+92">Sweeden (+46)</a></li>
+                                                                            <li><a href="#" value="+79">Danmark (+79)</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <input type="text" class="form-control border-0" id="number" value="" name="number">
+                                                                    </div>
+                                                                    <button type="button" class="btn btn-submit">Add</button>
+                                                                </div>
+                                                                <!-- <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-popup">Save changes</button>
+                                                                </div> -->
                                                             </div>
-                                                            <div class="modal-body">
-                                                            ...
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                            <button type="button" class="btn btn-primary">Save changes</button>
-                                                            </div>
-                                                        </div>
                                                         </div>
                                                     </div>
+                                                    <!--Add Modal -->
+                                                    
                                                 </div>
                                             </div>
                                             <div class="col-5 col-md-6 d-flex justify-content-end">
@@ -156,57 +197,91 @@
                                             <p class="secondary">452005, Indore MP</p> 
                                             <p class="secondary">near police station</p>
                                         </label>
-                                        <a href="" class="edit-btn" data-toggle="modal" data-target="#editDetailsModal">
+                                        <a href="" class="edit-btn" data-toggle="modal" data-target="#editAddressModal">
                                             <img src="assets/images/edit-btn.svg" alt="">
                                         </a>
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="editDetailsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <!--Edit Modal -->
+                                        <div class="modal fade checkoutModals edit" id="editAddressModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">Edit address</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Address line 1" value="88/1, Indrapuri">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Address line 2" value="Bhanwarkua Road">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="City" value="Indore">
+                                                        </div>
+                                                        <div class="form-row form-group">
+                                                            <div class="col">
+                                                            <input type="text" class="form-control" placeholder="State" value="MP">
+                                                            </div>
+                                                            <div class="col">
+                                                            <input type="text" class="form-control" placeholder="Post Code" value="444444">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Landmark" value="Police station">
+                                                        </div>
+                                                        <button type="button" class="btn btn-submit">Edit</button>
+                                                    </div>                                                
                                                 </div>
-                                                <div class="modal-body">
-                                                ...
-                                                </div>
-                                                <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Save changes</button>
-                                                </div>
-                                            </div>
                                             </div>
                                         </div>
+                                        <!--Edit Modal -->
                                     </div>
                                     <div class="action-btns">
                                         <div class="row">
                                             <div class="col-7 col-md-6 d-flex align-items-center">
                                                 <div class="add-new-details">
-                                                    <a href="#" data-toggle="modal" data-target="#addDetailsModal">
+                                                    <a href="#" data-toggle="modal" data-target="#addAddressModal">
                                                         <img src="assets/images/plus.svg" alt="">Add new details
                                                     </a>
-                                                    <!-- Modal -->
-                                                    <div class="modal fade" id="addDetailsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                    <!--Add Modal -->
+                                                    <div class="modal fade checkoutModals add" id="addAddressModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered" role="document">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                <span aria-hidden="true">&times;</span>
-                                                            </button>
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exampleModalLongTitle">Add address</h5>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="form-group">
+                                                                        <input type="text" class="form-control" placeholder="Address line 1" value="">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <input type="text" class="form-control" placeholder="Address line 2" value="">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <input type="text" class="form-control" placeholder="City" value="">
+                                                                    </div>
+                                                                    <div class="form-row form-group">
+                                                                        <div class="col">
+                                                                        <input type="text" class="form-control" placeholder="State" value="">
+                                                                        </div>
+                                                                        <div class="col">
+                                                                        <input type="text" class="form-control" placeholder="Post Code" value="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <input type="text" class="form-control" placeholder="Landmark" value="">
+                                                                    </div>
+                                                                    <button type="button" class="btn btn-submit">Add</button>
+                                                                </div>                                                
                                                             </div>
-                                                            <div class="modal-body">
-                                                            ...
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                            <button type="button" class="btn btn-primary">Save changes</button>
-                                                            </div>
-                                                        </div>
                                                         </div>
                                                     </div>
+                                                    <!--Add Modal -->
                                                 </div>
                                             </div>
                                             <div class="col-5 col-md-6 d-flex justify-content-end">
@@ -359,8 +434,29 @@
                                 </div>
                             </div>
                             <div class="promocode">
-                                <a href="#">Add promo code </a>
-                                <button> <img src="assets/images/cart-white.svg" alt=""> PAR SECURELY</button>
+                                <a href="#" data-toggle="modal" data-target="#addPromoModal">Add promo code </a>
+                                <!--Add promo Modal -->
+                                <div class="modal fade checkoutModals add" id="addPromoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Add promocode</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="form-group m-0">
+                                                    <input type="text" class="form-control" placeholder="Type Promo Code" value="">
+                                                </div>
+                                                
+                                                <button type="button" class="btn btn-submit">REDEEM</button>
+                                            </div>                                                
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Add promo Modal -->
+                                <button class="securly"> <img src="assets/images/cart-white.svg" alt=""> PAR SECURELY</button>
                             </div>
                         </div>
                     </div>

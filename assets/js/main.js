@@ -244,5 +244,44 @@ $('.step-header').click(function () {
   $(this).parents('.fieldsets').addClass('active');
 });
 $('.step-header').css({'pointer-events': 'none'});
+
+$("#pwd_old a").on('click', function(event) {
+  event.preventDefault();
+  if($('#pwd_old #password').attr("type") == "text"){
+      $('#pwd_old #password').attr('type', 'password');
+      $('#pwd_old a i').addClass( "fa-eye" );
+      $('#pwd_old a i').removeClass( "fa-eye-slash" );
+  }else if($('#pwd_old #password').attr("type") == "password"){
+      $('#pwd_old #password').attr('type', 'text');
+      $('#pwd_old a i').removeClass( "fa-eye" );
+      $('#pwd_old a i').addClass( "fa-eye-slash" );
+  }
+});
+
+$("#pwd_new a").on('click', function(event) {
+  event.preventDefault();
+  if($('#pwd_new #password').attr("type") == "text"){
+      $('#pwd_new #password').attr('type', 'password');
+      $('#pwd_new a i').addClass( "fa-eye" );
+      $('#pwd_new a i').removeClass( "fa-eye-slash" );
+  }else if($('#pwd_new #password').attr("type") == "password"){
+      $('#pwd_new #password').attr('type', 'text');
+      $('#pwd_new a i').removeClass( "fa-eye" );
+      $('#pwd_new a i').addClass( "fa-eye-slash" );
+  }
+});
+
+$("#pwd_re a").on('click', function(event) {
+  event.preventDefault();
+  if($('#pwd_re #password').attr("type") == "text"){
+      $('#pwd_re #password').attr('type', 'password');
+      $('#pwd_re a i').addClass( "fa-eye" );
+      $('#pwd_re a i').removeClass( "fa-eye-slash" );
+  }else if($('#pwd_re #password').attr("type") == "password"){
+      $('#pwd_re #password').attr('type', 'text');
+      $('#pwd_re a i').removeClass( "fa-eye" );
+      $('#pwd_re a i').addClass( "fa-eye-slash" );
+  }
+});
     
 })(jQuery);
